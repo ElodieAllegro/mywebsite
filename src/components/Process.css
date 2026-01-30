@@ -1,0 +1,175 @@
+.process {
+ padding: 6rem 4rem;
+ background: #230d40;
+ overflow: hidden;
+}
+
+.process-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.process-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.process-left {
+  color: white;
+}
+
+.process-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 3rem;
+  letter-spacing: 0.025em;
+}
+
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.process-step {
+  transition: all 0.3s;
+}
+
+.process-step-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.process-step-header:hover .process-step-icon {
+  color: #D946A6;
+}
+
+.process-step-header:hover .process-step-title {
+  color: #D946A6;
+}
+
+.process-step-icon {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  min-width: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.process-step-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.025em;
+  transition: color 0.3s ease;
+}
+
+.process-step-description {
+  color: #D946A6;
+  line-height: 1.7;
+  padding-left: 2.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.process-right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.rocket-wrapper {
+  position: relative;
+  width: 200px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rocket-image {
+  width: 200px;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 0 20px rgba(155, 164, 255, 0.5));
+}
+
+.rocket-trail {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 0;
+  background: linear-gradient(to bottom, rgba(100, 200, 255, 0.6), rgba(255, 150, 50, 0.4), transparent);
+  border-radius: 50%;
+  filter: blur(15px);
+  z-index: 0;
+  transition: height 0.1s ease-out, opacity 0.1s ease-out;
+}
+
+.launch-base {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: auto;
+  z-index: 1;
+}
+
+/* Cacher la colonne droite (fusée) sur mobile et tablette */
+@media (max-width: 1023px) {
+  .process-right {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .process-content-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .process-title {
+    font-size: 3rem;
+  }
+
+  .rocket-wrapper {
+    width: 400px;
+    height: 500px;
+  }
+
+  .rocket-image {
+    width: 150px;
+  }
+
+  .launch-base {
+    width: 350px;
+  }
+}

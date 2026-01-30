@@ -1,0 +1,40 @@
+.agency-hero {
+ padding: 10rem 2rem 8rem;
+    background: #230d40;
+    color: white;
+}
+
+.agency-hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.agency-hero-tagline {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.agency-hero-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: 0.025em;
+}
+
+.agency-hero-description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .agency-hero-title {
+    font-size: 3.5rem;
+  }
+
+  .agency-hero-description {
+    font-size: 1.25rem;
+  }
+}

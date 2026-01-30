@@ -1,0 +1,78 @@
+.values {
+  padding: 6rem 2rem;
+  background: white;
+}
+
+.values-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.value-card {
+  background: white;
+  padding: 3rem;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  border: solid 2px #230d40;
+}
+
+.value-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2B2D5F;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.025em;
+}
+
+.value-description {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2B2D5F;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.value-content {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.value-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #D946A6;
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+  border-radius: 0;
+  transition: all 0.3s;
+  text-align: center;
+  letter-spacing: 0.025em;
+}
+
+.value-button:hover {
+  background: #C23A94;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .values-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .value-card {
+    padding: 2.5rem;
+  }
+}

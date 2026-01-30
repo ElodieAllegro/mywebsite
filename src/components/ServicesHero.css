@@ -1,0 +1,52 @@
+.services-hero {
+  padding: 10rem 2rem 6rem;
+  background: white;
+}
+
+.services-hero-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.services-hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2B2D5F;
+  line-height: 1.2;
+  letter-spacing: 0.025em;
+}
+
+.services-hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.services-hero-description {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.8;
+}
+
+.services-hero-description strong {
+  color: #2B2D5F;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .services-hero-container {
+    grid-template-columns: 1fr 1.2fr;
+  }
+
+  .services-hero-title {
+    font-size: 4rem;
+  }
+
+  .services-hero-description {
+    font-size: 1.125rem;
+  }
+}

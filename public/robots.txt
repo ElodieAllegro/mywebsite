@@ -1,0 +1,11 @@
+# Robots.txt pour EA Web Agency
+# Autoriser tous les robots d'indexation
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.ea-webagency.fr/sitemap.xml
+
+# Crawl-delay pour éviter la surcharge serveur
+Crawl-delay: 1

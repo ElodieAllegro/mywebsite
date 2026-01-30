@@ -1,0 +1,151 @@
+.service-detail {
+  padding: 6rem 2rem;
+  background: #1d1735;
+  color: white;
+  min-height: 100vh;
+}
+
+.service-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.service-container h1 {
+  font-size: 2.5rem;
+  color: #D946A6;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.service-container h2 {
+  font-size: 2rem;
+  color: #7042f8;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.service-container p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.service-container ul {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.service-container li {
+  margin-bottom: 0.5rem;
+}
+
+.cta-section {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #D946A6;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 0 1rem;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #c23890;
+}
+
+.cta-button.secondary {
+  background: transparent;
+  border: 2px solid #D946A6;
+}
+
+.cta-button.secondary:hover {
+  background: rgba(217, 70, 166, 0.1);
+}
+
+.other-services {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.other-services h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.other-services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.other-services li {
+  margin-bottom: 0.5rem;
+}
+
+.other-services a {
+  color: #D946A6;
+  text-decoration: none;
+}
+
+.other-services a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service-container h1 {
+  animation: fadeInUp 1s ease-out;
+}
+
+.service-container h2 {
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.service-container p {
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.service-container ul {
+  animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.cta-section {
+  animation: fadeInUp 1s ease-out 0.8s both;
+}
+
+.other-services {
+  animation: fadeInUp 1s ease-out 1s both;
+}
+
+@media (max-width: 768px) {
+  .service-detail {
+    padding: 4rem 1rem;
+  }
+
+  .service-container h1 {
+    font-size: 2rem;
+  }
+
+  .service-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-button {
+    display: block;
+    margin: 1rem 0;
+  }
+}

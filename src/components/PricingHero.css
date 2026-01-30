@@ -1,0 +1,65 @@
+.pricing-hero {
+  background:white;
+  color:linear-gradient(135deg, #2B2D5F 0%, #1a1d3f 100%);
+  padding: 8rem 2rem;
+  text-align: center;
+}
+
+.pricing-hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pricing-hero-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.pricing-hero-subtitle {
+  font-size: 1.5rem;
+  color: #D946A6;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.pricing-hero-description {
+  font-size: 1.1rem;
+  color:linear-gradient(135deg, #2B2D5F 0%, #1a1d3f 100%);
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.cta{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #D946A6;
+    color: white;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-decoration: none;
+    border-radius: 0.375rem;
+    transition: all 0.3s;
+    text-align: center;
+    letter-spacing: 0.025em;
+    border: white;
+}
+@media (min-width: 768px) {
+  .pricing-hero {
+    padding: 10rem 2rem;
+  }
+
+  .pricing-hero-title {
+    font-size: 4rem;
+  }
+
+  .pricing-hero-subtitle {
+    font-size: 1.75rem;
+  }
+
+  .pricing-hero-description {
+    font-size: 1.25rem;
+  }
+}
