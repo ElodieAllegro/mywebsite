@@ -104,7 +104,7 @@
 .rotate-100{
   position: absolute;
   top: -450px;
-  right: 0;
+  right: 50px;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
