@@ -47,17 +47,14 @@ export default function Hero({ setCurrentPage }) {
         )}
         <div className="hero-container relative z-10">
           <h1 className="hero-title">
-            Agence web <br />
-            <span>création de site</span> pro en France
+            Agence digitale <br />
+            <span>spécialisée en création</span> de sites web
           </h1>
           <h2 className="hero-subtitle">
-            Création site vitrine, e-commerce et applications sur mesure
+            Web design responsive, SEO & développement sur mesure
           </h2>
           <p className="hero-description">
-            Spécialistes en web design responsive et SEO-friendly, nous accompagnons les entreprises partout en France dans leur transformation digitale. 
-          </p>
-          <p className="hero-description">
-            De la création de votre site en pure code ou Wordpress à la maintenance, nos solutions sont pensées pour <span className="hero-highlight">augmenter votre chiffre d'affaires de 20%</span>.
+            Transformez votre présence en ligne en véritable levier de croissance
           </p>
           <div className="hero-buttons">
             <a 
