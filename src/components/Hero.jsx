@@ -71,7 +71,7 @@ export default function Hero({ setCurrentPage }) {
             Web design responsive, SEO & développement sur mesure
           </h2>
           <p className="hero-description">
-            Transformez votre présence en ligne en véritable levier de croissance
+            Transformez votre présence en ligne en véritable levier de croissance  🚀
           </p>
           <div className="hero-buttons">
             <a 
