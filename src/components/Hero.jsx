@@ -47,8 +47,8 @@ export default function Hero({ setCurrentPage }) {
         )}
         <div className="hero-container relative z-10">
           <h1 className="hero-title">
-            Agence digitale <br />
-            <span>spécialisée en création</span> de sites web
+            Agence spécialisée<br />
+            <span> en création de sites web</span> 
           </h1>
           <h2 className="hero-subtitle">
             Web design responsive, SEO & développement sur mesure
