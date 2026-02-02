@@ -3,6 +3,7 @@ import './Hero.css';
 
 export default function Hero({ setCurrentPage }) {
   const [videoLoaded, setVideoLoaded] = useState(false);
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -12,8 +13,24 @@ export default function Hero({ setCurrentPage }) {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      setMousePos({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
   return (
     <section id="home" className="hero">
+      <div
+        className="hero-aura"
+        style={{
+          left: `${mousePos.x}px`,
+          top: `${mousePos.y}px`,
+        }}
+      />
       <div className="relative h-full w-full">
         <div className="particles-container">
           {[...Array(30)].map((_, i) => {

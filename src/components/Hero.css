@@ -10,6 +10,19 @@
   justify-content: center;
 }
 
+.hero-aura {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(217, 70, 166, 0.6) 0%, rgba(217, 70, 166, 0.3) 35%, rgba(217, 70, 166, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  filter: blur(80px);
+  z-index: 5;
+  will-change: left, top;
+}
+
 .hero-container {
   max-width: 1100px;
   margin: 0 auto;
